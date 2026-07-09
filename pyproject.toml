@@ -121,6 +121,7 @@ dev = [
     "black>=24.8.0",
     "flake8>=7.1.0",
     "bandit>=1.8.0",
+    "mypy>=1.18.0",
     "pre-commit>=3.8.0"
 ]
 macos = [
@@ -187,3 +188,12 @@ exclude = [
 [tool.bandit]
 exclude_dirs = ["tests", ".venv", "build", "dist"]
 skips = ["B101", "B601"]  # Skip assert checks and shell usage in controlled contexts
+
+[tool.mypy]
+python_version = "3.10"
+files = ["src", "tests"]
+ignore_missing_imports = true
+explicit_package_bases = true
+follow_imports = "skip"
+check_untyped_defs = true
+warn_unused_configs = true
