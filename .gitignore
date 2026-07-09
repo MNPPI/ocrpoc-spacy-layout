@@ -51,6 +51,8 @@ junit.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+.repomix/
+repomix-output.*
 
 # Translations
 *.mo
