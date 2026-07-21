@@ -230,6 +230,10 @@ This project implements comprehensive continuous integration and quality assuran
 - **Test Results**: JUnit XML output for CI/CD integration
 - **Security Scanning**: Automated vulnerability detection
 
+### MNPPI Required Public Checks
+
+GitHub runs the MNPPI public security and plain-language checks for each pull request. These checks use hosted runners and no MNPPI secrets.
+
 ### CodeQL Security Analysis
 
 - **Automated Vulnerability Scanning**: GitHub CodeQL performs semantic code analysis
