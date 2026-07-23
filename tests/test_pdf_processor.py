@@ -156,7 +156,8 @@ class TestPDFProcessor:
                 "table_example.pdf",
             )
             mock_download.assert_any_call(
-                "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+                "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/"
+                "dummy.pdf",
                 "sample_text.pdf",
             )
 
