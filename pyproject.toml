@@ -79,6 +79,7 @@ dependencies = [
     "PyYAML>=6.0.0",
     "rapidocr>=3.4.0",
     "referencing>=0.35.0",
+    "requests>=2.31.0",
     "rpds-py>=0.18.0",
     "rtree>=1.2.0",
     "safetensors>=0.4.0",
@@ -122,7 +123,8 @@ dev = [
     "flake8>=7.1.0",
     "bandit>=1.8.0",
     "mypy>=1.18.0",
-    "pre-commit>=3.8.0"
+    "pre-commit>=3.8.0",
+    "types-requests>=2.31.0",
 ]
 macos = [
     "pyobjc-core>=11.1",
