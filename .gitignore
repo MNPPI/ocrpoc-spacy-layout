@@ -143,3 +143,9 @@ Thumbs.db
 # Project specific
 data/pdfs/
 data/processed_results.json
+
+# Cloud Agent recipe
+.cursor/*
+!.cursor/environment.json
+!.cursor/install.sh
+!.cursor/README.md
