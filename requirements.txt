@@ -1,3 +1,7 @@
+# Legacy pip-installable mirror of most runtime deps plus some dev tools.
+# CI and Cursor Cloud use pyproject.toml + uv.lock:
+#   uv sync --extra dev --frozen --no-default-groups
+# Prefer that path. This file can drift from the lockfile.
 accelerate>=1.10.0
 annotated-types>=0.7.0
 antlr4-python3-runtime

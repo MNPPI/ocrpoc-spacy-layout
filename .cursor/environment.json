@@ -1,4 +1,4 @@
 {
   "name": "ocrpoc-spacy-layout",
-  "install": ".cursor/install.sh"
+  "install": "bash .cursor/install.sh"
 }
