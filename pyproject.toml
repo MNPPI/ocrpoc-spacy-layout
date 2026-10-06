@@ -108,7 +108,7 @@ dependencies = [
     "typing-inspection>=0.4.0",
     "typing_extensions>=4.9.0",
     "tzdata>=2024.0.0",
-    "urllib3>=2.2.0",
+    "urllib3>=2.8.0",
     "wasabi>=1.1.0",
     "weasel>=0.3.0",
     "wrapt>=1.16.0",
@@ -133,6 +133,11 @@ macos = [
     "pyobjc-framework-Quartz>=11.1",
     "pyobjc-framework-Vision>=11.1"
 ]
+
+[tool.uv]
+# virtualenv ≥21.7.13 floor for GHSA-94p9 / GHSA-p58f / GHSA-x78j — REMOVE when
+# the lockfile resolves ≥21.7.13 without this pin and those OSV groups are gone.
+constraint-dependencies = ["virtualenv>=21.7.13,<22"]
 
 [tool.setuptools]
 packages = ["src"]
