@@ -10,7 +10,7 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.11.5 or higher
 - Git
 - Virtual environment tools
 
