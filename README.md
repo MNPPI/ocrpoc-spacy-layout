@@ -1,6 +1,6 @@
 # Spacy-Layout PDF to AI-Structured Data POC
 
-[![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python Version](https://img.shields.io/badge/python-3.11.5+-blue.svg)](https://www.python.org/downloads/)
 [![pytest](https://github.com/stc93025mn/ocrpoc-spacy-layout/actions/workflows/ci.yml/badge.svg)](https://github.com/stc93025mn/ocrpoc-spacy-layout/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/stc93025mn/ocrpoc-spacy-layout/graph/badge.svg?token=DATD5TUXXS)](https://codecov.io/gh/stc93025mn/ocrpoc-spacy-layout)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -38,7 +38,7 @@ Note from the maintainer: I've been trying to locate the best way to OCR and pro
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.11.5 or higher
 - Virtual environment (recommended)
 
 ### Setup
@@ -209,7 +209,7 @@ This project implements comprehensive continuous integration and quality assuran
 
 ### Automated Testing Pipeline
 
-- **Multi-Python Support**: Tests run on Python 3.10, 3.11, 3.12, and 3.13
+- **Multi-Python Support**: Tests run on Python 3.11.5+, 3.12, and 3.13
 - **Code Quality Checks**:
   - **Black**: Code formatting validation
   - **Flake8**: Linting and style enforcement
@@ -312,7 +312,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Development Requirements
 
-- Python 3.10+
+- Python 3.11.5+
 - All tests pass
 - Code coverage ≥80%
 - No linting errors

@@ -28,7 +28,7 @@ production OCR path the org already runs.
 
 | Environment | How dependencies install | Runtime |
 | --- | --- | --- |
-| Mac workstation | `uv sync --extra dev --frozen --no-default-groups` | Python 3.10+ via uv |
+| Mac workstation | `uv sync --extra dev --frozen --no-default-groups` | Python 3.11.5+ via uv |
 | Cursor Cloud Agent | [`.cursor/install.sh`](.cursor/install.sh) | Same uv command |
 
 `README.md` and `CONTRIBUTING.md` still show `python -m venv` +

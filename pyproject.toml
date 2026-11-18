@@ -7,7 +7,7 @@ name = "ocrpoc-spacy-layout"
 version = "0.1.0"
 description = "A proof of concept demonstrating the use of the spacy-layout library to convert PDFs into AI-ready structured data"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11.5"
 dependencies = [
     "accelerate>=1.10.0",
     "annotated-types>=0.7.0",
@@ -135,10 +135,15 @@ macos = [
 ]
 
 [tool.uv]
+# soupsieve ==4.0 covers GHSA-mmhr-3c5m-f64f and GHSA-6655-6qjp-jx7x.
+# REMOVE when the resolver picks ≥4.0 without this pin.
 # virtualenv ≥21.14.13 floor for GHSA-vxj4 / GHSA-c978 / GHSA-394h / GHSA-6w3r /
 # GHSA-cx6f (21.14.9 regression) — REMOVE when the lockfile resolves ≥21.14.13
 # without this pin and those OSV groups are gone.
-constraint-dependencies = ["virtualenv>=21.14.13,<22"]
+constraint-dependencies = [
+    "soupsieve==4.0",
+    "virtualenv>=21.14.13,<22",
+]
 
 [tool.setuptools]
 packages = ["src"]

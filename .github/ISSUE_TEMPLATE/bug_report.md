@@ -29,7 +29,7 @@ What actually happened instead.
 ## Environment
 
 - OS: [e.g., macOS, Windows, Linux]
-- Python Version: [e.g., 3.10, 3.11]
+- Python Version: [e.g., 3.11.5, 3.12]
 - Package Version: [e.g., 0.1.0]
 - PDF Type: [e.g., IRS Form 1040, scanned document, etc.]
 
