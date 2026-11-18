@@ -135,12 +135,17 @@ macos = [
 ]
 
 [tool.uv]
+# mail-parser ==4.6.3 for Dependabot alerts #88–#92 (locked 4.4.0 via
+# docling-slim). Exact pin: later 4.x releases exist, including 4.11.0.
+# REMOVE when the lockfile resolves ==4.6.3 without this pin and those
+# advisories are gone — do not raise this pin above 4.6.3.
 # soupsieve ==4.0 covers GHSA-mmhr-3c5m-f64f and GHSA-6655-6qjp-jx7x.
 # REMOVE when the resolver picks ≥4.0 without this pin.
 # virtualenv ≥21.14.13 floor for GHSA-vxj4 / GHSA-c978 / GHSA-394h / GHSA-6w3r /
 # GHSA-cx6f (21.14.9 regression) — REMOVE when the lockfile resolves ≥21.14.13
 # without this pin and those OSV groups are gone.
 constraint-dependencies = [
+    "mail-parser==4.6.3",
     "soupsieve==4.0",
     "virtualenv>=21.14.13,<22",
 ]
